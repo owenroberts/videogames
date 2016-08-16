@@ -1,0 +1,222 @@
+<!doctype html>
+<html>
+<head>
+	<title>Video Games</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="../slides/slides.css" type="text/css" />
+	<link rel="stylesheet" href="../slides/highlight/github-gist.css" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="../slides/highlight/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	<script src="../slides/p5.min.js"></script>
+	<script src="../slides/bkg.js"></script>
+	<script src="../slides/slides.js"></script>
+
+	<style>
+		 body {
+		 	background:
+		 		linear-gradient(
+					rgba(240, 248, 255, 0.95), 
+					rgba(240, 248, 255, 0.95)
+			    ),
+				url(../noise.jpg);
+		 }
+	</style>
+
+</head>
+<body>
+	<div id="container" class="slides">
+		<div class="slide">
+			<h1>Video Game Genres</h1>
+			<p><a href="/">Video Games</a> > Week 1 > Genre</p>
+		</div>
+
+		<div class="slide">
+			<blockquote>Genre began as an absolute classification system for ancient Greek literature. Poetry, prose, and performance each had a specific and calculated style that related to the theme of the story.
+			<br>
+			<a href="https://en.wikipedia.org/wiki/Genre" target="blank">https://en.wikipedia.org/wiki/Genre</a></blockquote>
+			<p>Genre is a starting point for talking about different categories in art that share similar traits such as style and theme.  It is always changing and endlessly debatable, but it's a useful shorthand for describing the basic characterisitcs of a work of art.</p>
+			<p>Let's take a look at the differences in genre classification between video games and "traditional" mediums like literature, art and film.</p>
+		</div>
+
+		<div class="slide">
+			<h2>Literature</h2>
+			<p>Forms: prose, poetry</p>
+			<p>Basic genres: epic, tragedy, comedy</p>
+			<p>Sub-genres of fiction: drama, fables, fantasy, fiction (novels and short stories), folklore, historical fiction, horror, humor, mystery, mythology, poetry (verse), realism, science fiction</p>
+			<p>Sub-genre of non-fiction: autobiography, biography, essay, narrative nonfiction, nonfiction, speech</p> 
+			<p>Literary genres are based first on the style of writing (prose vs poetry) and then on subject matter or plot elements.</p>
+			<p>Literary genres are also based on the historical period of specific works of literature.</p>
+		</div>
+
+		<div class="slide">
+			<h2>Film</h2>
+			<p>Genres: action, adventure, comedy, crime/gangster, drama, epics, historical, horror, musical, dance, science fiction, war, westerns</p>
+			<p><a href="http://www.filmsite.org/genres.html" target="blank">Main Film Genres</a></p>
+			<p>Film genres reflect setting, theme and plots.</p>
+			<p>Most films fit into at least one and often more than one of these genres.  Film categorization is also done using the Auteur System, or films by a particular director or influenced by their style, such as Hitchcock films.</p>
+		</div>
+			
+		<div class="slide">
+			<h2>Art</h2>
+			<p>Art is categorized by mediums and historical movements.</p>
+			<p>Mediums: drawings, painting, printmaking, sculpture, collage, textile, photgraphy, film, video, performance, multimedia</p>
+			<p><a href="https://en.wikipedia.org/wiki/Art_periods" target="blank">Art periods</a></p>
+			<p>Renaissance genres: history painting, portrait, genre (scenes of everyday life), landscape, animal, still life</p>
+		</div>
+
+		<div class="slide">
+			<h2>Video games</h2>
+			<blockquote>
+				Video game genres are determined by gameplay: what challenges face the player and what actions he takes to overcome those challenges. So we clearly have sports games, shooter games, racing games, and so on.
+				<br>
+				<a href="http://www.gamasutra.com/view/feature/132463/the_designers_notebook_sorting_.php" target="blank">The Designer's Notebook: Sorting Out the Genre Muddle by Ernest Adams</a>
+			</blockquote>
+			<p>Main genres: action, adventure, role-playing, simulation, strategy, casual, massively multiplayer online</p>
+		</div>
+
+		<!-- 
+	https://en.wikipedia.org/wiki/Ergodic_literature
+	In ergodic literature, nontrivial effort is required to allow the reader to traverse the text. If ergodic literature is to make sense as a concept, there must also be nonergodic literature, where the effort to traverse the text is trivial, with no extranoematic responsibilities placed on the reader except (for example) eye movement and the periodic or arbitrary turning of pages. 
+		 -->
+
+		<div class="slide">
+			<p><strong>Action</strong>
+			<ul>
+				<li>Early simple arcade games are mostly action</li>
+				<li>Timing and hand-eye coordination</li>
+				<li>Real time gameplay</li>
+				<li>Destory enemies without dying</li>
+			</ul>
+		</div>
+
+		<div class="slide">
+			<p><strong>Action sub-genres</strong>
+			<ul>
+				<li>Platformers</li>
+				<li>Shooters (first person and third person)</li>
+				<li>Racing</li>
+				<li>Fighting</li>
+			</ul>
+		</div>
+
+		<div class="slide">
+			<p><strong>Adventure</strong>
+			<ul>
+				<li>Early text based games</li>
+				<li>Slow game play with puzzles, exploration, story</li>
+				<li>Turn based</li>
+			</ul>
+		</div>
+
+		<div class="slide">
+			<p><strong>Action adventure</strong>
+			<ul>
+				<li>Combine real time play with story and puzzle elements</li>
+			</ul>
+		</div>
+
+		<div class="slide">
+			<p><strong>Role-playing games</strong>
+			<ul>
+				<li>Originate from Dungeons & Dragons</li>
+				<li>Players controls character or group of characters, often an avatar of the real player</li>
+				<li>Gain experience throughout game</li>
+				<li>Full story lines</li>
+			</ul>
+		</div>
+
+		<div class="slide">
+			<p><strong>Simulation</strong>
+			<ul>
+				<li>Replicating aspects of real world experience</li>
+				<li>Real-time and turn-based games</li>
+				<li>Application of real world rules</li>
+			</ul>
+		</div>
+
+		<div class="slide">
+			<p><strong>Simulation styles</strong>
+			<ul>
+				<li>Vehicle, ie flight sims</li>
+				<li>Process, construction and management, ie building civilations, strategy, business</li>
+				<li>Sports</li>
+			</ul>
+		</div>
+
+		<div class="slide">
+			<p><strong>Strategy</strong>
+			<ul>
+				<li>Based on classic games like Risk</li>
+				<li>Resource management</li>
+				<li>Decisions and goals</li>
+			</ul>
+		</div>
+
+		<div class="slide">
+			<p><strong>Massively Multiplayer Online</strong>
+			<ul>
+				<li>Cooperative play with up to hundreds or thousands of players</li>
+				<li>Individual and in teams</li>
+				<li>Social interaction</li>
+				<li>Commonly combined with first person shooters, sports, strategy</li>
+			</ul>
+		</div>
+
+		<div class="slide">
+			<p><strong>Casual games</strong>
+			<ul>
+				<li>Short and relaxing or meditative</li>
+				<li>Usually played in browser or phone</li>
+				<li>Puzzles, cards, word games, board games</li>
+			</ul>
+		</div>
+
+		<div class="slide">
+			<h2>Roguelike</h2>
+			<p><a href="https://en.wikipedia.org/wiki/Roguelike" target="blank">Roguelike</a> games are a good example of how a genre can emerge from a single game and grow.</p>
+			<p><em>Rogue</em> was developed in 1980 by Glenn Wichman and Michael Toy at the University of California, Santa Cruz.  The game was inspired by early text-based adventure games and interactive fiction.  In order to create a multitude of experiences from one very small code base, a library for random generation developed by Ken Arnold was used to create random levels in the game.</p>
+			<p><em>Rogue</em> is defined by procedural generation of levels, simple graphics, text interactions, turn-based play and permanent character death.  These characteristics have grown to form a popular sub-genre, called "roguelike".</p>
+			<p><em>Rogue</em> inspired an entire movement, and many other games were inspired by it's basic design.  Today there are <a href="http://www.roguebasin.com/index.php?title=Main_Page" target="blank">communinities</a> dedicated to roguelike game develoment and many indie games are created combining new platforms with roguelike characteristics.</p> 
+		</div>	
+
+		<div class="slide">
+			<h2>What genre of games will we be making?</h2>
+		</div>
+
+		<!-- 
+
+		games examples!!
+
+		film genres
+		http://www.filmsite.org/genres.html
+
+		literary genres
+		https://en.wikipedia.org/wiki/Literary_genre
+		https://en.wikipedia.org/wiki/List_of_writing_genres
+		The most general genres in literature are (in loose chronological order) epic, tragedy,[1] comedy, and creative nonfiction.[citation needed] They can all be in the form of prose or poetry. Additionally, a genre such as satire, allegory or pastoral might appear in any of the above, not only as a subgenre (see below), but as a mixture of genres. Finally, they are defined by the general cultural movement of the historical period in which they were composed.
+
+		art mediums
+		drawing, painting, printmaking, sculpture, collage, textile, photography, film, video, performance, multimedia
+
+		art movements
+		https://en.wikipedia.org/wiki/Art_periods
+		
+		art
+		history painting, portrait, genre (scenes of everyday life), landscape, animal, still life		
+
+		film 
+		drama, documentary
+		Western, war film, horror film, romantic comedy film, musical, crime film
+
+		crawford
+		I perceive five major regions of games: board games, card games, athletic games, children's games, and computer games.
+
+		http://cs.slu.edu/~fritts/csci142/schedule/csci142_game_genres.pdf
+		http://www.di.ubi.pt/~agomes/tjv/teoricas/01-genres.pdf
+
+		 -->
+
+
+	</div>
+</body>
