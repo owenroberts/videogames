@@ -31,7 +31,40 @@
 			<p><a href="../index.html">Video Games</a></p>
 		</div>
 
+		<div class="slide">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/znaOlu2Fr6k" frameborder="0" allowfullscreen></iframe>
+		</div>
 
+		<div class="slide">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/FBym0IFZ0u8" frameborder="0" allowfullscreen></iframe>
+		</div>
+
+		<div class="slide">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/ouX0GlyTMgM" frameborder="0" allowfullscreen></iframe>
+		</div>
+
+		<div class="slide">
+			<p><a href="menu.unitypackage">Download the Menu package</a> (includes GUIController, GameController and LoadNextLevel scripts, and the Canvas Screen prefab)</p>
+			<p>I fixed the UI animations problem by changing the animation update mode with this line in GUIController so it ignore the Time.timeScale and get rid of the IEnumerator calls:</p>
+			<pre><code>public Animator backgroundAnimator;
+
+void Start() {
+	backgroundAnimator.updateMode = AnimatorUpdateMode.UnscaledTime;
+}</code></pre>
+			<p>I also added a reference in GameController to the Camera object to disable the Mouse orbit controls:</p>
+			<pre><code>public Camera camera;
+void PauseGame() {
+	Time.timeScale = 0;
+	camera.GetComponent&lt;MouseOrbitImproved&gt; ().enabled = false;
+	gui.OpenMenu ();
+}
+
+public void PlayGame() {
+	Time.timeScale = 1;
+	camera.GetComponent&lt;MouseOrbitImproved&gt; ().enabled = true;
+	gui.CloseMenu ();
+}</code></pre>
+		</div>
 
 
 		
